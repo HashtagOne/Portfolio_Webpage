@@ -126,20 +126,8 @@ p, a {
   color: #222;
 }
 
-.project-card a {
+.btn {
   display: inline-block;
-  margin-top: 12px;
-  padding: 10px 24px;
-  background-color: #085d96;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-}
-
-/* CONTACT */
-
-#contact a {
-   display: inline-block;
   margin-top: 12px;
   padding: 10px 24px;
   background-color: #085d96;
