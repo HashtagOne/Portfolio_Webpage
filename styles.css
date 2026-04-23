@@ -3,7 +3,15 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px 20px;
-  background-color: #f5f5f5;
+  padding-bottom: 0;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* NAVIGATION */
@@ -11,9 +19,10 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 20px 40px;
   background-color: #28273e;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .nav-name {
   color: white;
@@ -39,6 +48,8 @@ nav ul li a {
   padding: 100px 20px;
   background-color: #1a1a2e;
   color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 #hero p {
@@ -71,10 +82,78 @@ h1 {
 h2 {
   color: #444;
   border-bottom: 0.125rem solid #085d96;
+  padding-bottom: 8px
 }
 
 p {
   color: #666;
   line-height: 1.6;
   font-size: 1rem;
+}
+
+#about,
+#projects,
+#contact {
+  padding: 60px 40px;
+}
+
+h1, h2, h3 {
+  font-family: 'Trebuchet MS', serif;
+}
+
+p, a {
+  font-family: 'Verdana', serif;
+}
+
+/* PROJECT */
+
+.project-card {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12)
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #222;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 24px;
+  background-color: #085d96;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* CONTACT */
+
+#contact a {
+   display: inline-block;
+  margin-top: 12px;
+  padding: 10px 24px;
+  background-color: #085d96;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+
+/* FOOTER */
+
+footer {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  border-top: 1px solid #000000;
+  background-color: #f0f0f0;
+}
+
+footer p {
+  font-size: 0.9rem;
+  text-align: left;
+  padding-left: 12px;
+  
 }
